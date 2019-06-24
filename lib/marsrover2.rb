@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 current_directory = File.join(File.dirname(File.expand_path(__FILE__)))
 $LOAD_PATH << current_directory
 

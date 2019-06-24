@@ -1,4 +1,9 @@
 require "bundler/setup"
+require 'simplecov'
+SimpleCov.start
+
+require 'codecov'
+SimpleCov.formatter = SimpleCov::Formatter::Codecov
 
 project_lib_dir = File.join(
     File.dirname(
@@ -6,9 +11,9 @@ project_lib_dir = File.join(
     ), '..', 'lib'
 )
 
-require "#{project_lib_dir}/input_parser.rb"
-# require "#{project_lib_dir}/move_rover.rb"
-# require "#{project_lib_dir}/rovers.rb"
+require "#{project_lib_dir}/move_rover.rb"
+require "#{project_lib_dir}/rover.rb"
+require "#{project_lib_dir}/plateau.rb"
 
 FILE_FIXTURE_PATH = File.join(
     File.dirname(

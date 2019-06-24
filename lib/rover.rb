@@ -45,8 +45,4 @@ class Rover
   def print
     puts "#{x} #{y} #{orientation.to_s}"
   end
-
-  # def in_grid?
-  #
-  # end
 end
