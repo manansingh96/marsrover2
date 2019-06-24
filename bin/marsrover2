@@ -1,0 +1,3 @@
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+ruby $DIR/../lib/marsrover2.rb $1
