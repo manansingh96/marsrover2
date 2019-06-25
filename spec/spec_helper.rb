@@ -1,9 +1,4 @@
 require "bundler/setup"
-require 'simplecov'
-SimpleCov.start
-
-require 'codecov'
-SimpleCov.formatter = SimpleCov::Formatter::Codecov
 
 project_lib_dir = File.join(
     File.dirname(

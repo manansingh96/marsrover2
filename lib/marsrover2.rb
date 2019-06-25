@@ -21,5 +21,5 @@ until ARGF.eof
   orientation = input[2].to_sym
   commands = ARGF.gets.strip
   rover = Rover.new(x, y, orientation)
-  MoveRover.new.process(commands, rover, grid)
+  MoveRover.new.process(commands, rover)
 end
